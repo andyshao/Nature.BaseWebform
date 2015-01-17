@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2831C826-642F-48E8-B5B4-23BE1323CF98}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nature</RootNamespace>
+    <AssemblyName>Nature.BaseWebform</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\_dll\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\_dll\bin\Nature.BaseWebform.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseWebform\PageUserInfo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseWebform\BasePageDelete.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseWebform\BasePageForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseWebform\BasePageFormVirtual.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseWebform\BasePageList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseWebform\BasePageListVirtual.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseWebform\PageURL.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseWebform\PageURLVirtual.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BaseWebform\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="页面基类的结构图.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\NatureSSO\Nature.Client.SSOWebApp\Nature.Client.SSOWebApp.csproj">
+      <Project>{cb82c2aa-852d-4e37-a47c-641f9854234f}</Project>
+      <Name>Nature.Client.SSOWebApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nature.Common\Nature.Common.csproj">
+      <Project>{55DC3025-75A9-441C-9D75-7652E46900F5}</Project>
+      <Name>Nature.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nature.DataAccessLibrary\Nature.DataAccessLibrary.csproj">
+      <Project>{75BC6E2B-B380-4CFB-BAF2-BA7C568E1778}</Project>
+      <Name>Nature.DataAccessLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nature.MetaData\Nature.MetaData.csproj">
+      <Project>{98C10895-982D-4B38-A5C9-C0B2552FF3F7}</Project>
+      <Name>Nature.MetaData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NatureServer\Nature.Server\Nature.Service.csproj">
+      <Project>{05C7DA1F-28FE-44C5-8571-B59AF5AC4431}</Project>
+      <Name>Nature.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nature.UI.WebControl.BaseControl\Nature.UI.WebControl.BaseControl.csproj">
+      <Project>{62B7E147-FB87-4162-80DA-E74416C0A06F}</Project>
+      <Name>Nature.UI.WebControl.BaseControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nature.UI.WebControl.MetaControl\Nature.UI.WebControl.MetaControl.csproj">
+      <Project>{C737E143-4B8F-45AA-A0DD-11FD907B0B83}</Project>
+      <Name>Nature.UI.WebControl.MetaControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nature.UI.WebControl.QuickPagerSQL\Nature.UI.WebControl.QuickPagerSQL.csproj">
+      <Project>{7CA14F8E-B552-40B7-B979-3710A49A8741}</Project>
+      <Name>Nature.UI.WebControl.QuickPagerSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nature.UI.WebControl.QuickPager\Nature.UI.WebControl.QuickPager.csproj">
+      <Project>{69052650-70B7-47F2-B281-B038FE26757B}</Project>
+      <Name>Nature.UI.WebControl.QuickPager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nature.User\Nature.User.csproj">
+      <Project>{A620E323-E2B4-4767-BFF6-95B9B713758D}</Project>
+      <Name>Nature.User</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NatureServer\Nature.Service.DataBase\Nature.Service.DataBase.csproj">
+      <Project>{E2B27077-010E-4AA1-8B81-6985BE754665}</Project>
+      <Name>Nature.Service.DataBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
