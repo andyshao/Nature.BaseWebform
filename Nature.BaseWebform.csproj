@@ -96,7 +96,7 @@
       <Project>{98C10895-982D-4B38-A5C9-C0B2552FF3F7}</Project>
       <Name>Nature.MetaData</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\NatureServer\Nature.Server\Nature.Service.csproj">
+    <ProjectReference Include="..\Nature.Server\Nature.Service.csproj">
       <Project>{05C7DA1F-28FE-44C5-8571-B59AF5AC4431}</Project>
       <Name>Nature.Service</Name>
     </ProjectReference>
